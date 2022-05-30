@@ -21,6 +21,8 @@ public class CyclistController {
     @GetMapping
     public List<CyclistResponse> getAllCyclists(@RequestParam(value="team", required = false) String team){
         return cyclistService.getAllCyclists(team);
+
+
     }
 
     @GetMapping("/{id}")
