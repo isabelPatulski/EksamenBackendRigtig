@@ -25,7 +25,7 @@ public class MakeTestData implements ApplicationRunner {
         this.cyclistRepository = cyclistRepository;
         this.teamRepository = teamRepository;
     }
-
+    //Test data
     public void makeTeamsWithCyclist(){
         Team team1 = new Team("DK","Team Easy On");
         Team team2 = new Team("UK","Culten");
@@ -49,7 +49,6 @@ public class MakeTestData implements ApplicationRunner {
                 team1,
                 team2));
     }
-
 
     @Override
     public void run(ApplicationArguments args) throws Exception {

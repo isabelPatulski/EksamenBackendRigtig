@@ -21,7 +21,7 @@ public class CyclistService {
         this.teamRepository = teamRepository;
     }
 
-
+    //Test OK
     public List<CyclistResponse> getAllCyclists(String teamName) {
         List<Cyclist> cyclists;
         if(teamName != null){
@@ -32,7 +32,7 @@ public class CyclistService {
         return cyclists.stream().map((cyclist)->new CyclistResponse(cyclist)).collect(Collectors.toList());
     }
 
-
+    //Test OK
     public CyclistResponse getCyclist(int id) throws Exception {
         Cyclist cyclist = cyclistRepository.findById(id).orElseThrow(()->new Client4xxException("No cyclist with given id was found"));
         return new CyclistResponse(cyclist);
