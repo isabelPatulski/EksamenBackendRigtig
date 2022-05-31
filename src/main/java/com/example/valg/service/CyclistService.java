@@ -52,7 +52,6 @@ public class CyclistService {
         return new CyclistResponse(cyclistRepository.save(cyclist));
     }
 
-    //Deletes a racer based on ID
     public void deleteCyclist(int id){
         cyclistRepository.deleteById(id);
     }

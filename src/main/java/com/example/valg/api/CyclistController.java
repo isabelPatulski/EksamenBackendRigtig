@@ -21,8 +21,6 @@ public class CyclistController {
     @GetMapping
     public List<CyclistResponse> getAllCyclists(@RequestParam(value="team", required = false) String team){
         return cyclistService.getAllCyclists(team);
-
-
     }
 
     @GetMapping("/{id}")
@@ -36,7 +34,7 @@ public class CyclistController {
     }
 
     @PutMapping("/{id}")
-    public CyclistResponse editRacer(@RequestBody CyclistRequest body, @PathVariable int id){
+    public CyclistResponse editCyclist(@RequestBody CyclistRequest body, @PathVariable int id){
         return cyclistService.editCyclist(body,id);
     }
 

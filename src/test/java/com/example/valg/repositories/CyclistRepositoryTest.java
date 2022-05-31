@@ -48,9 +48,9 @@ import static org.junit.jupiter.api.Assertions.*;
         }
 
         @Test
-        public void findCyclistByTeam_Name() {
-            List<Cyclist> allRacersInTeam = cyclistRepository.findCyclistByTeam_TeamName(team1Name);
-            assertEquals(1,allRacersInTeam.size());
+        public void findCyclistByTeam_TeamName() {
+            List<Cyclist> allCyclistInTeam = cyclistRepository.findCyclistByTeam_TeamName(team1Name);
+            assertEquals(1,allCyclistInTeam.size());
         }
 
     }

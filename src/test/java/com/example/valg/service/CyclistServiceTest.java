@@ -1,6 +1,5 @@
 package com.example.valg.service;
 
-import com.example.valg.dto.CyclistRequest;
 import com.example.valg.dto.CyclistResponse;
 import com.example.valg.entities.Cyclist;
 import com.example.valg.entities.Team;

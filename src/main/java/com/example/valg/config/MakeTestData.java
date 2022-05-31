@@ -29,6 +29,8 @@ public class MakeTestData implements ApplicationRunner {
     public void makeTeamsWithCyclist(){
         Team team1 = new Team("DK","Team Easy On");
         Team team2 = new Team("UK","Culten");
+        Team team3 = new Team("SWE","Vikingerne");
+        Team team4 = new Team("US","AMERICA");
 
 
         Cyclist cyclist1 = new Cyclist("Pim de Keysergracht");
@@ -40,7 +42,8 @@ public class MakeTestData implements ApplicationRunner {
 
 
         team1.addCyclists(Set.of(cyclist1,cyclist2));
-        team2.addCyclists(Set.of(cyclist3,cyclist4, cyclist5, cyclist6));
+        team2.addCyclists(Set.of(cyclist3,cyclist4, cyclist5));
+        team3.addCyclists(Set.of(cyclist6));
 
         teamRepository.saveAll(List.of(
                 team1,
